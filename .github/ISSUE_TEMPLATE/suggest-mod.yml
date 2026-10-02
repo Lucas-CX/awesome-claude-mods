@@ -1,0 +1,27 @@
+name: Suggest a mod or report a compatibility change
+description: Bring a useful case, original source, and honest evidence
+title: "[Mod] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Canonical repository and specific mod directory
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What real problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Version, license, dependencies, and checks actually run
+      description: Say not tested where applicable. Include dates and source links; no secrets or private transcripts.
+    validations:
+      required: true
+  - type: input
+    id: relationship
+    attributes:
+      label: Your relationship to the project

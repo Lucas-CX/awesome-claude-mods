@@ -1,0 +1,1007 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-02",
+  "scope": "19 individually linked mods: 3 Anthropic samples, 9 community picks, 4 built-in references, 3 license watchlist candidates",
+  "review_notice": "Documentation and module entry existence checked; no mod installed, executed, validated, or runtime-tested by this guide. Not a security audit.",
+  "entries": [
+    {
+      "id": "token-weather",
+      "name": "Token Weather",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code-playground",
+      "path": "claude-code/mods/token-weather",
+      "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather",
+      "kind": "anthropic-sample",
+      "category": "context",
+      "summary": "A compact, per-turn context-usage display with a recent-history chart.",
+      "summary_zh": "用一行天气提示和历史小图显示上下文用量。",
+      "selection_reason": "Small, documented example for learning engine usage and a terminal band.",
+      "caveats": "Full-window percentage differs from the auto-compaction threshold; updates after turns. Competes with other AbovePrompt bands.",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "license_note": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code-playground",
+        "path": "claude-code/mods/token-weather",
+        "metadata": {
+          "repo": "anthropics/claude-code-playground",
+          "url": "https://github.com/anthropics/claude-code-playground",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T16:11:58Z",
+          "license": "Apache-2.0"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/README.md",
+          "sha": "025b26b15f388e2c8f93f33421d01fe0b2902b2f"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/hooks/hooks.json",
+          "sha": "abb36c4b1184f7cbf7e7ed3797ad4fb6e3cb7f65",
+          "modules": [
+            "./token-weather.mjs"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/hooks/token-weather.mjs",
+          "sha": "6aee1c3112a31813c54aedca744e2eba83eb4c7a"
+        }
+      },
+      "social_demo": {
+        "post_url": "https://x.com/ClaudeDevs/status/2105721436270993609",
+        "post_date": "2026-10-01",
+        "author_handle": "@ClaudeDevs",
+        "attribution": "official-publisher-demo"
+      }
+    },
+    {
+      "id": "replay-theater",
+      "name": "Replay Theater",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code-playground",
+      "path": "claude-code/mods/replay-theater",
+      "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater",
+      "kind": "anthropic-sample",
+      "category": "review",
+      "summary": "Step through edit attempts from the last editing turn.",
+      "summary_zh": "逐步查看上一轮文件修改尝试。",
+      "selection_reason": "Concrete before/after review workflow with a documented build story.",
+      "caveats": "Records attempted edits, including denied or failed ones; not proof of the final filesystem state. Diff views are truncated and session-local.",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "license_note": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code-playground",
+        "path": "claude-code/mods/replay-theater",
+        "metadata": {
+          "repo": "anthropics/claude-code-playground",
+          "url": "https://github.com/anthropics/claude-code-playground",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T16:11:58Z",
+          "license": "Apache-2.0"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/README.md",
+          "sha": "fb5d05bc0960a28bc4fc1cb9062a7ecab3723e8b"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/hooks/hooks.json",
+          "sha": "166408449a86976afa1ab5a37ab160d71ca79325",
+          "modules": [
+            "./replay-theater.mjs"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/hooks/replay-theater.mjs",
+          "sha": "a7d9b6a32843b00ddf404add9bc9ac4b3bdcec33"
+        }
+      },
+      "social_demo": {
+        "post_url": "https://x.com/ClaudeDevs/status/2105721439206994232",
+        "post_date": "2026-10-01",
+        "author_handle": "@ClaudeDevs",
+        "attribution": "official-publisher-demo"
+      }
+    },
+    {
+      "id": "blast-radius",
+      "name": "Blast Radius",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code-playground",
+      "path": "claude-code/mods/blast-radius",
+      "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/blast-radius",
+      "kind": "anthropic-sample",
+      "category": "privacy",
+      "summary": "Preview the impact of selected risky Bash commands and choose whether to continue.",
+      "summary_zh": "对部分高风险 Bash 命令展示影响并等待选择。",
+      "selection_reason": "Useful study of holding tool calls and presenting a decision UI.",
+      "caveats": "Not a security boundary: misses wrappers and shell constructs. Migration previews load project code. Upstream says later fixes have not been re-run live; only test in disposable projects.",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "license_note": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code-playground",
+        "path": "claude-code/mods/blast-radius",
+        "metadata": {
+          "repo": "anthropics/claude-code-playground",
+          "url": "https://github.com/anthropics/claude-code-playground",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T16:11:58Z",
+          "license": "Apache-2.0"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/README.md",
+          "sha": "0d59e5df4bba535addaa67930027d512ddf9839c"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/hooks/hooks.json",
+          "sha": "8f8fee025291848506300dd1529afa9937420777",
+          "modules": [
+            "./blast-radius.mjs"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/hooks/blast-radius.mjs",
+          "sha": "c1fe7a62fd7037e2f6150f7049455ffd30cfab07"
+        }
+      },
+      "social_demo": {
+        "post_url": "https://x.com/ClaudeDevs/status/2105721437701259338",
+        "post_date": "2026-10-01",
+        "author_handle": "@ClaudeDevs",
+        "attribution": "official-publisher-demo"
+      }
+    },
+    {
+      "id": "cctop",
+      "name": "cctop",
+      "author": "tomstagl",
+      "repository": "tomstagl/cctop",
+      "path": "plugin",
+      "url": "https://github.com/tomstagl/cctop/tree/main/plugin",
+      "kind": "community",
+      "category": "context",
+      "summary": "A detailed dashboard for context, usage, tool activity, agents, and session state.",
+      "summary_zh": "查看上下文、用量、工具和子代理状态的综合面板。",
+      "selection_reason": "Version matrix and contract diagnostics make compatibility more visible than a generic badge.",
+      "caveats": "Hybrid mod, skills and optional native companion. Review binary installation separately; some metrics are estimates. Follow root installation docs and plugin compatibility notes.",
+      "upstream_version_evidence": "Plugin 0.10.0 documents a 2.1.284 contract; this is upstream evidence, not a current-version guarantee.",
+      "license_note": "MIT; brand fonts have separate notices",
+      "license_url": "https://github.com/tomstagl/cctop/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "tomstagl/cctop",
+        "path": "plugin",
+        "metadata": {
+          "repo": "tomstagl/cctop",
+          "url": "https://github.com/tomstagl/cctop",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T18:07:18Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/tomstagl/cctop/blob/main/plugin/README.md",
+          "sha": "9ddde294fe2dfb941646aa8aceea13bb27b9460b"
+        },
+        "entry": {
+          "url": "https://github.com/tomstagl/cctop/blob/main/plugin/hooks/hooks.json",
+          "sha": "a82032d4973dc7a5e281a4b053a3d0773824c9b4",
+          "modules": [
+            "./pane.tsx"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/tomstagl/cctop/blob/main/plugin/hooks/pane.tsx",
+          "sha": "9590887c6149a58793946b18a32f24071f7bdcce"
+        }
+      }
+    },
+    {
+      "id": "cc-pr-tracker",
+      "name": "cc-pr-tracker",
+      "author": "sezaakgun",
+      "repository": "sezaakgun/cc-pr-tracker",
+      "path": "",
+      "url": "https://github.com/sezaakgun/cc-pr-tracker",
+      "kind": "community",
+      "category": "review",
+      "summary": "Keep selected GitHub pull requests, reviews, and required checks visible in the session.",
+      "summary_zh": "在会话里查看 PR、评审和必需检查状态。",
+      "selection_reason": "Useful when the real bottleneck is waiting for a review or CI.",
+      "caveats": "Requires authenticated gh with repository access; polls GitHub through a process. A failed refresh can leave old values visible.",
+      "upstream_version_evidence": "Upstream reports testing on 2.1.269; setup still mentions the obsolete enable flag.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/sezaakgun/cc-pr-tracker/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "sezaakgun/cc-pr-tracker",
+        "path": "",
+        "metadata": {
+          "repo": "sezaakgun/cc-pr-tracker",
+          "url": "https://github.com/sezaakgun/cc-pr-tracker",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-29T10:05:09Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/sezaakgun/cc-pr-tracker/blob/main/README.md",
+          "sha": "189b86027cad13cbc7fb6ab7eefe8b09324060d9"
+        },
+        "entry": {
+          "url": "https://github.com/sezaakgun/cc-pr-tracker/blob/main/hooks/hooks.json",
+          "sha": "f04066aa6a65d86f3fbfd2677e2735f2974d617a",
+          "modules": [
+            "./register.tsx"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/sezaakgun/cc-pr-tracker/blob/main/hooks/register.tsx",
+          "sha": "839d13e6e0ff3863094a461b7d47ec3484f17b06"
+        }
+      }
+    },
+    {
+      "id": "aside",
+      "name": "aside",
+      "author": "JayDoubleu",
+      "repository": "JayDoubleu/aside",
+      "path": "",
+      "url": "https://github.com/JayDoubleu/aside",
+      "kind": "community",
+      "category": "context",
+      "summary": "Ask a side question about the transcript without adding it to the main conversation.",
+      "summary_zh": "在侧栏询问当前会话，不把问题加入主对话。",
+      "selection_reason": "A focused example of separating inspection from the main task.",
+      "caveats": "Uses model calls and the session transcript, so it can consume usage. During a running turn, a fork may reflect the previous completed turn. Read-only does not mean cost-free.",
+      "upstream_version_evidence": "Upstream reports validation and tests on 2.1.270; setup still mentions the obsolete enable flag.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/JayDoubleu/aside/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "JayDoubleu/aside",
+        "path": "",
+        "metadata": {
+          "repo": "JayDoubleu/aside",
+          "url": "https://github.com/JayDoubleu/aside",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-14T20:15:34Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/JayDoubleu/aside/blob/main/README.md",
+          "sha": "4d26307392b31d5fa5d8ee3bb930d16f8ef1e319"
+        },
+        "entry": {
+          "url": "https://github.com/JayDoubleu/aside/blob/main/hooks/hooks.json",
+          "sha": "7ece5900a585138e4b969bb891729e97d084a49e",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/JayDoubleu/aside/blob/main/hooks/register.ts",
+          "sha": "0885d27b9b51a4da6822858397eaa6be589dc820"
+        }
+      }
+    },
+    {
+      "id": "claude-mermaid",
+      "name": "claude-mermaid",
+      "author": "galElmalah",
+      "repository": "galElmalah/claude-mods",
+      "path": "claude-mermaid",
+      "url": "https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid",
+      "kind": "community",
+      "category": "interface",
+      "summary": "Render supported Mermaid diagrams as terminal text art inside replies.",
+      "summary_zh": "把支持的 Mermaid 图表直接画成终端字符图。",
+      "selection_reason": "A small, visual demo with a practical payoff for architecture conversations.",
+      "caveats": "Not all Mermaid diagram types are supported; wide art can be clipped. Original repository URL redirected to this canonical subdirectory.",
+      "upstream_version_evidence": "Upstream requires 2.1.270+ with old flag instructions; current compatibility untested.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/galElmalah/claude-mods/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "galElmalah/claude-mods",
+        "path": "claude-mermaid",
+        "metadata": {
+          "repo": "galElmalah/claude-mods",
+          "url": "https://github.com/galElmalah/claude-mods",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-15T19:47:38Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/galElmalah/claude-mods/blob/main/claude-mermaid/README.md",
+          "sha": "0f82719729b5a6b3a5b37c582c78336b2fab3a6e"
+        },
+        "entry": {
+          "url": "https://github.com/galElmalah/claude-mods/blob/main/claude-mermaid/hooks/hooks.json",
+          "sha": "549b2644db002a5e67b874c9c8580f2ffdfa97f1",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/galElmalah/claude-mods/blob/main/claude-mermaid/hooks/register.ts",
+          "sha": "cad8ebdcec6c48938249ccdf9eaf817ec0de6475"
+        }
+      }
+    },
+    {
+      "id": "mindful-claude",
+      "name": "Mindful Claude",
+      "author": "halluton",
+      "repository": "halluton/Mindful-Claude",
+      "path": "",
+      "url": "https://github.com/halluton/Mindful-Claude",
+      "kind": "community",
+      "category": "interface",
+      "summary": "Show a breathing animation while a turn is running.",
+      "summary_zh": "在等待回复时显示呼吸节奏动画。",
+      "selection_reason": "A simple demonstration of a turn-aware interface customization.",
+      "caveats": "A UI/focus experiment; no medical-benefit claims are made here. Review conflicts with other prompt bands.",
+      "upstream_version_evidence": "Upstream requires 2.1.269+ with old flag instructions; current compatibility untested.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/halluton/Mindful-Claude/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "halluton/Mindful-Claude",
+        "path": "",
+        "metadata": {
+          "repo": "halluton/Mindful-Claude",
+          "url": "https://github.com/halluton/Mindful-Claude",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-14T23:01:33Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/halluton/Mindful-Claude/blob/main/README.md",
+          "sha": "0f97cef88b6aba68c1226668a0aafbd96a2dcb15"
+        },
+        "entry": {
+          "url": "https://github.com/halluton/Mindful-Claude/blob/main/hooks/hooks.json",
+          "sha": "ba06bac514cb514f0f66888e4d15cf2f0d28706d",
+          "modules": [
+            "./register.tsx"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/halluton/Mindful-Claude/blob/main/hooks/register.tsx",
+          "sha": "939cacf0699ea71a93c944c78b8ff714f999d76c"
+        }
+      },
+      "social_demo": {
+        "post_url": "https://x.com/halluton/status/2099640486130835845",
+        "post_date": "2026-09-14",
+        "author_handle": "@halluton",
+        "attribution": "author-authored-demo"
+      }
+    },
+    {
+      "id": "cc-arcade",
+      "name": "cc-arcade",
+      "author": "sezaakgun",
+      "repository": "sezaakgun/cc-arcade",
+      "path": "",
+      "url": "https://github.com/sezaakgun/cc-arcade",
+      "kind": "community",
+      "category": "interface",
+      "summary": "Play small terminal games while Claude works, with a turn-aware pause.",
+      "summary_zh": "Claude 工作时玩终端小游戏，回合结束时暂停。",
+      "selection_reason": "Demonstrates interactive surfaces and input handling beyond a static dashboard.",
+      "caveats": "Needs suitable terminal input/font support. Its pet observes tool calls; presentation-only does not imply it sees no session data.",
+      "upstream_version_evidence": "Upstream requires 2.1.269+ with old flag instructions; its surface claims predate current docs.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/sezaakgun/cc-arcade/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "sezaakgun/cc-arcade",
+        "path": "",
+        "metadata": {
+          "repo": "sezaakgun/cc-arcade",
+          "url": "https://github.com/sezaakgun/cc-arcade",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-15T00:19:51Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/sezaakgun/cc-arcade/blob/main/README.md",
+          "sha": "0c38e16e45123653b90370297365b7acb2f4cf82"
+        },
+        "entry": {
+          "url": "https://github.com/sezaakgun/cc-arcade/blob/main/hooks/hooks.json",
+          "sha": "68ab8826e062a71e10fbf8eee55994d16190e3d6",
+          "modules": [
+            "./register.tsx"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/sezaakgun/cc-arcade/blob/main/hooks/register.tsx",
+          "sha": "71072dcc383e1aea5904d02c7c5aee9e44d3ab13"
+        }
+      }
+    },
+    {
+      "id": "fable-pin",
+      "name": "fable-pin",
+      "author": "karanb192",
+      "repository": "karanb192/claude-code-mods",
+      "path": "plugins/fable-pin",
+      "url": "https://github.com/karanb192/claude-code-mods/tree/main/plugins/fable-pin",
+      "kind": "community",
+      "category": "workflow",
+      "summary": "Rewrite the selected model on non-fork subagent spawns.",
+      "summary_zh": "统一非 fork 子代理的目标模型。",
+      "selection_reason": "Compact example of deterministic agent policy through an event handler.",
+      "caveats": "The bundled target is an upstream model alias: verify it exists for your account before use. Changes model selection and costs; upstream notes an error can leave a spawn unpinned.",
+      "upstream_version_evidence": "Upstream reports validation on 2.1.272; setup still mentions the obsolete enable flag.",
+      "license_note": "MIT (repository license)",
+      "license_url": "https://github.com/karanb192/claude-code-mods/blob/main/license",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "karanb192/claude-code-mods",
+        "path": "plugins/fable-pin",
+        "metadata": {
+          "repo": "karanb192/claude-code-mods",
+          "url": "https://github.com/karanb192/claude-code-mods",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-02T05:03:02Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/karanb192/claude-code-mods/blob/main/plugins/fable-pin/README.md",
+          "sha": "d982255832b0d5f2059e6bf05ea005401551d25d"
+        },
+        "entry": {
+          "url": "https://github.com/karanb192/claude-code-mods/blob/main/plugins/fable-pin/hooks/hooks.json",
+          "sha": "555aa1a6cc87ed232165c9a378e7042af7d12673",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/karanb192/claude-code-mods/blob/main/plugins/fable-pin/hooks/register.ts",
+          "sha": "a486ff5607164b630842fcc0b853016e82abd568"
+        }
+      }
+    },
+    {
+      "id": "cache-tax",
+      "name": "cache-tax",
+      "author": "karanb192",
+      "repository": "karanb192/cache-tax",
+      "path": "",
+      "url": "https://github.com/karanb192/cache-tax",
+      "kind": "community",
+      "category": "workflow",
+      "summary": "Warn about a cold prompt cache and optionally send bounded keep-warm model calls.",
+      "summary_zh": "提醒缓存冷启动成本，并可选发送保温请求。",
+      "selection_reason": "A concrete cost-management experiment with explicit trade-offs.",
+      "caveats": "Advanced: model pings cost usage and have output-cost uncertainty. Cache lifetime must match the strategy. Do not assume savings or install alongside its classic-hook variant.",
+      "upstream_version_evidence": "Upstream reports validation on 2.1.276; setup still mentions the obsolete enable flag.",
+      "license_note": "MIT (repository metadata)",
+      "license_url": null,
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "karanb192/cache-tax",
+        "path": "",
+        "metadata": {
+          "repo": "karanb192/cache-tax",
+          "url": "https://github.com/karanb192/cache-tax",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-20T11:38:49Z",
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/karanb192/cache-tax/blob/main/README.md",
+          "sha": "4aa9b63ae38cc26020d0d53cdf1c498d7ed9b8df"
+        },
+        "entry": {
+          "url": "https://github.com/karanb192/cache-tax/blob/main/hooks/hooks.json",
+          "sha": "e56d6825b1dc82a3448edeb6033fb5ad9ccb39c9",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/karanb192/cache-tax/blob/main/hooks/register.ts",
+          "sha": "cffb21b6580424b9233386299ec0f73295df95ca"
+        }
+      }
+    },
+    {
+      "id": "secret-redactor",
+      "name": "secret-redactor",
+      "author": "ray-amjad",
+      "repository": "ray-amjad/awesome-claude-code-function-hooks",
+      "path": "plugins/secret-redactor",
+      "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/tree/main/plugins/secret-redactor",
+      "kind": "community",
+      "category": "privacy",
+      "summary": "Heuristically substitute sensitive strings before model input, with reversible tool-input placeholders.",
+      "summary_zh": "在模型输入前按规则替换敏感字符串，并可恢复工具输入。",
+      "selection_reason": "A useful example of interception, plus an opportunity to examine failure cases.",
+      "caveats": "Not a complete leakage barrier. Detection has exceptions, its memory vault resets, and restoration into tool inputs is enabled by default. Use synthetic secrets when evaluating.",
+      "upstream_version_evidence": "No numeric Claude minimum found; README retains old flag-gated setup.",
+      "license_note": "MIT",
+      "license_url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/blob/main/LICENSE",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "ray-amjad/awesome-claude-code-function-hooks",
+        "path": "plugins/secret-redactor",
+        "readme": {
+          "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/blob/main/plugins/secret-redactor/README.md",
+          "sha": "bf11fe5f66cea58324f64f69641eb19887276199"
+        },
+        "entry": {
+          "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/blob/main/plugins/secret-redactor/hooks/hooks.json",
+          "sha": "cd26c036a1f9f89ad3989648b340df91f61f361b",
+          "modules": [
+            "./redact.ts"
+          ]
+        },
+        "metadata": {
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-10T15:01:57Z",
+          "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "spdx_id": "MIT",
+            "url": "https://api.github.com/licenses/mit",
+            "node_id": "MDc6TGljZW5zZTEz"
+          },
+          "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks"
+        },
+        "license_note": "MIT declared in plugin manifest and full repository LICENSE; copyright 2026 Ray Amjad.",
+        "module": {
+          "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/blob/main/plugins/secret-redactor/hooks/redact.ts",
+          "sha": "2d37a4cda4762b8790f2cb5bd2e83f6c836de96b"
+        }
+      }
+    },
+    {
+      "id": "builtin-diff",
+      "name": "diff",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code",
+      "path": "mods/diff",
+      "url": "https://github.com/anthropics/claude-code/tree/main/mods/diff",
+      "kind": "builtin-reference",
+      "category": "review",
+      "summary": "The built-in changed-file and hunk review pane.",
+      "summary_zh": "内置文件差异与修改块面板。",
+      "selection_reason": "Reference implementation for panes, commands, refresh, and Git-backed views.",
+      "caveats": "Built-in reference, not a separate install recommendation. Uses repository files, session context and Git.",
+      "upstream_version_evidence": "Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here.",
+      "license_note": "Anthropic proprietary terms; public source is not an MIT grant",
+      "license_url": "https://github.com/anthropics/claude-code/blob/main/LICENSE.md",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code",
+        "path": "mods/diff",
+        "metadata": {
+          "repo": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T18:43:10Z",
+          "license": "not-detected"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/diff/README.md",
+          "sha": "9340542248f845604f80546fe9b2c8281a0a6953"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/diff/hooks/hooks.json",
+          "sha": "42164197dd51f1b05f62422c9d108e825e5f1a08",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/diff/hooks/register.ts",
+          "sha": "3273ad0a360ef6acc846b5a53fd09f001479cf51"
+        }
+      }
+    },
+    {
+      "id": "builtin-agents-md",
+      "name": "agents-md",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code",
+      "path": "mods/agents-md",
+      "url": "https://github.com/anthropics/claude-code/tree/main/mods/agents-md",
+      "kind": "builtin-reference",
+      "category": "workflow",
+      "summary": "Load AGENTS.md project instructions according to the instruction-file policy.",
+      "summary_zh": "按照策略加载 AGENTS.md 项目指令。",
+      "selection_reason": "Reference for instruction precedence and nested project context.",
+      "caveats": "Instruction loading varies with policy and session mode; review the upstream behavior before adapting it.",
+      "upstream_version_evidence": "Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here.",
+      "license_note": "Anthropic proprietary terms; public source is not an MIT grant",
+      "license_url": "https://github.com/anthropics/claude-code/blob/main/LICENSE.md",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code",
+        "path": "mods/agents-md",
+        "metadata": {
+          "repo": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T18:43:10Z",
+          "license": "not-detected"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/agents-md/README.md",
+          "sha": "2d754e146b450b13de4edc90e90b0f07e7cc2993"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/agents-md/hooks/hooks.json",
+          "sha": "126286074c9866f6031c4032f8fcfeb19f3443ae",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/agents-md/hooks/register.ts",
+          "sha": "2f5767705fbf975b1fc45e9b02be4ace809ee1ba"
+        }
+      }
+    },
+    {
+      "id": "builtin-sec-default",
+      "name": "sec-default",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code",
+      "path": "mods/sec-default",
+      "url": "https://github.com/anthropics/claude-code/tree/main/mods/sec-default",
+      "kind": "builtin-reference",
+      "category": "privacy",
+      "summary": "Preserve organization-managed policy across user-installed mod hooks.",
+      "summary_zh": "让组织管理的策略不被用户安装的 Mod 覆盖。",
+      "selection_reason": "Reference for managed tiers and the boundaries of policy hooks.",
+      "caveats": "Administrative reference; normal user-tier loading is not equivalent to managed placement.",
+      "upstream_version_evidence": "Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here.",
+      "license_note": "Anthropic proprietary terms; public source is not an MIT grant",
+      "license_url": "https://github.com/anthropics/claude-code/blob/main/LICENSE.md",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code",
+        "path": "mods/sec-default",
+        "metadata": {
+          "repo": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T18:43:10Z",
+          "license": "not-detected"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/sec-default/README.md",
+          "sha": "98bbc1c2c25e5801d3c08a4018a5f7b6b840ea02"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/sec-default/hooks/hooks.json",
+          "sha": "4a70fc2dcf5b35b8653fa752688a21627238f23b",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/sec-default/hooks/register.ts",
+          "sha": "8b8c8000cf96f60bee60d8202c914dba4806fcbf"
+        }
+      }
+    },
+    {
+      "id": "builtin-telemetry",
+      "name": "telemetry",
+      "author": "anthropics",
+      "repository": "anthropics/claude-code",
+      "path": "mods/telemetry",
+      "url": "https://github.com/anthropics/claude-code/tree/main/mods/telemetry",
+      "kind": "builtin-reference",
+      "category": "context",
+      "summary": "Provide first-party analytics hooks for built-in features.",
+      "summary_zh": "为内置功能提供第一方遥测钩子。",
+      "selection_reason": "Reference for shared API contracts and batching behavior.",
+      "caveats": "Not a general community analytics SDK or an installation suggestion; upstream restricts callers and honors analytics controls.",
+      "upstream_version_evidence": "Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here.",
+      "license_note": "Anthropic proprietary terms; public source is not an MIT grant",
+      "license_url": "https://github.com/anthropics/claude-code/blob/main/LICENSE.md",
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "anthropics/claude-code",
+        "path": "mods/telemetry",
+        "metadata": {
+          "repo": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-10-01T18:43:10Z",
+          "license": "not-detected"
+        },
+        "readme": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/telemetry/README.md",
+          "sha": "e859919d7c00beafd0af1a512b406b1a6b310bb7"
+        },
+        "entry": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/telemetry/hooks/hooks.json",
+          "sha": "a36d860fa8b1292a1d969be106e7865e980d7141",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/anthropics/claude-code/blob/main/mods/telemetry/hooks/register.ts",
+          "sha": "4d646d2e509c065932251c18e597591b0fac9434"
+        }
+      }
+    },
+    {
+      "id": "token-ledger",
+      "name": "token-ledger",
+      "author": "Arunjay4213",
+      "repository": "Arunjay4213/claude-mods",
+      "path": "plugins/token-ledger",
+      "url": "https://github.com/Arunjay4213/claude-mods/tree/main/plugins/token-ledger",
+      "kind": "watchlist",
+      "category": "context",
+      "summary": "A lighter cost, token, and cache-ratio ledger with per-turn history.",
+      "summary_zh": "轻量成本、token 与缓存命中率账本。",
+      "selection_reason": "Potential alternative when a full dashboard is unnecessary.",
+      "caveats": "License clarification needed before reuse: plugin and README say MIT; root package says ISC; no license text found. Stores history locally.",
+      "upstream_version_evidence": "Upstream claims 2.1.269+ with old flag instructions; current compatibility untested.",
+      "license_note": "Ambiguous: MIT/ISC declarations; no license text found",
+      "license_url": null,
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "Arunjay4213/claude-mods",
+        "path": "plugins/token-ledger",
+        "readme": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/token-ledger/README.md",
+          "sha": "d2cae17b4d250f7ea3b5abdfe0d4b89629b096ad"
+        },
+        "entry": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/token-ledger/hooks/hooks.json",
+          "sha": "352623d6d5e884ccf5bf381faef117d53360713e",
+          "modules": [
+            "./register.tsx"
+          ]
+        },
+        "metadata": {
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-15T19:01:52Z",
+          "license": null,
+          "url": "https://github.com/Arunjay4213/claude-mods"
+        },
+        "license_note": "Plugin manifest and root README declare MIT; root package.json declares ISC; no license text found in complete tree.",
+        "module": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/token-ledger/hooks/register.tsx",
+          "sha": "47c61d5168108a8df05f9a5e34b90dd0f685d2a1"
+        }
+      }
+    },
+    {
+      "id": "context-lens",
+      "name": "context-lens",
+      "author": "Arunjay4213",
+      "repository": "Arunjay4213/claude-mods",
+      "path": "plugins/context-lens",
+      "url": "https://github.com/Arunjay4213/claude-mods/tree/main/plugins/context-lens",
+      "kind": "watchlist",
+      "category": "context",
+      "summary": "Inspect context usage, composition and recent growth.",
+      "summary_zh": "检查上下文用量、分类和近期增长。",
+      "selection_reason": "Potential comparison with Token Weather for readers wanting more detail.",
+      "caveats": "Same MIT/ISC ambiguity; explicit refresh makes token-count API requests. Treat turns-until-compaction as an estimate.",
+      "upstream_version_evidence": "Root claims 2.1.269+; plugin says breakdown needs 2.1.272; old flag instructions.",
+      "license_note": "Ambiguous: MIT/ISC declarations; no license text found",
+      "license_url": null,
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "Arunjay4213/claude-mods",
+        "path": "plugins/context-lens",
+        "readme": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/context-lens/README.md",
+          "sha": "02ecd2cd74a98170794931c5fe8ab123c59ec766"
+        },
+        "entry": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/context-lens/hooks/hooks.json",
+          "sha": "d3cdfe132b240b1d13e9a09414ec213c573b79fb",
+          "modules": [
+            "./register.tsx"
+          ]
+        },
+        "metadata": {
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-15T19:01:52Z",
+          "license": null,
+          "url": "https://github.com/Arunjay4213/claude-mods"
+        },
+        "license_note": "Plugin manifest and root README declare MIT; root package.json declares ISC; no license text found in complete tree.",
+        "module": {
+          "url": "https://github.com/Arunjay4213/claude-mods/blob/main/plugins/context-lens/hooks/register.tsx",
+          "sha": "95167377a893a3813b574ac890ba5619c6c80a71"
+        }
+      }
+    },
+    {
+      "id": "gh-ci-status",
+      "name": "gh-ci-status",
+      "author": "diegorv",
+      "repository": "diegorv/claude-functions-hook",
+      "path": "plugins/gh-ci-status",
+      "url": "https://github.com/diegorv/claude-functions-hook/tree/main/plugins/gh-ci-status",
+      "kind": "watchlist",
+      "category": "review",
+      "summary": "Show GitHub Actions and related PR links for the current repository.",
+      "summary_zh": "展示当前仓库的 GitHub Actions 和 PR 链接。",
+      "selection_reason": "Potential simpler alternative to tracking specific PRs.",
+      "caveats": "No license declaration or text found. Requires authenticated gh and a GitHub remote; initial discovery failure can remain silent until reload.",
+      "upstream_version_evidence": "Root discusses folder loading from 2.1.265, not proven current mod compatibility; old flag instructions.",
+      "license_note": "No license declaration/text found",
+      "license_url": null,
+      "review": {
+        "checked_on": "2026-10-02",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "diegorv/claude-functions-hook",
+        "path": "plugins/gh-ci-status",
+        "readme": {
+          "url": "https://github.com/diegorv/claude-functions-hook/blob/main/README.md",
+          "sha": "a8156aa5ada48023376f4f71ccb2c62156592fb6"
+        },
+        "entry": {
+          "url": "https://github.com/diegorv/claude-functions-hook/blob/main/plugins/gh-ci-status/hooks/hooks.json",
+          "sha": "2efa0dcf006f5f8cb1f1da7192125e5b6ee0660a",
+          "modules": [
+            "../src/hooks/register.tsx"
+          ]
+        },
+        "metadata": {
+          "branch": "main",
+          "archived": false,
+          "last_push": "2026-09-10T14:54:48Z",
+          "license": null,
+          "url": "https://github.com/diegorv/claude-functions-hook"
+        },
+        "license_note": "No license declaration or file found in README, plugin/marketplace manifests, package.json, or complete tree.",
+        "module": {
+          "url": "https://github.com/diegorv/claude-functions-hook/blob/main/plugins/gh-ci-status/src/hooks/register.tsx",
+          "sha": "65bdb79faf8465d9677ba008abecca96e2879ae3"
+        }
+      }
+    }
+  ]
+}

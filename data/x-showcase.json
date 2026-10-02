@@ -1,0 +1,182 @@
+{
+  "checked_on": "2026-10-02",
+  "scope": "Original-author or official-publisher X cases for actual Claude Code function-hook mods",
+  "verification_note": "This review verifies attribution and mod source structure, not runtime behavior, security or claims of quality. Public X post text and media presence were observed; video behavior was not independently reproduced. Publication dates are the dates shown on original X pages. No engagement metrics are used. Author-authored does not claim the earliest historical announcement.",
+  "official_announcement_url": "https://x.com/ClaudeDevs/status/2105721434807083061",
+  "official_samples_thread_url": "https://x.com/ClaudeDevs/status/2105721441622884802",
+  "entries": [
+    {
+      "id": "token-weather",
+      "name": "Token Weather",
+      "category": "Context visibility",
+      "category_zh": "上下文可视化",
+      "author_handle": "@ClaudeDevs",
+      "post_url": "https://x.com/ClaudeDevs/status/2105721436270993609",
+      "post_date": "2026-10-01",
+      "attribution": "official-publisher-demo",
+      "repository": "anthropics/claude-code-playground",
+      "repo_url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather",
+      "readme_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/README.md",
+      "mod_entry_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/hooks/hooks.json",
+      "mod_modules": [
+        "./token-weather.mjs"
+      ],
+      "module_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/token-weather/hooks/token-weather.mjs",
+      "license": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "practical_value": "A weather-style context gauge with a recent-turn sparkline makes context growth visible without opening a separate dashboard.",
+      "practical_value_zh": "用天气状态与近期轮次的小图持续显示上下文增长，无需切换到单独的面板。",
+      "caveat": "The percentage uses the full model window, not the auto-compaction threshold. It updates after turns; it is a teaching sample, not a supported product.",
+      "caveat_zh": "百分比以完整上下文窗口为基准，不等于自动压缩阈值；轮次结束后更新。这是教学示例，不是受支持的产品。",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "evidence_level": "A: original public X post read directly; canonical repository documentation and function-hook entry checked",
+      "verification_method": [
+        "Direct public X page, author, date, post text and linked thread read in cloud browser on 2026-10-02",
+        "Canonical GitHub README and function-hook entry checked via GitHub connector; existing source review reused"
+      ],
+      "repository_attribution": "Anthropic official thread names the sample and links its getting-started guide / Playground repository",
+      "current_runtime_compatibility": "not-tested",
+      "security_audit": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "id": "replay-theater",
+      "name": "Replay Theater",
+      "category": "Edit review",
+      "category_zh": "修改审阅",
+      "author_handle": "@ClaudeDevs",
+      "post_url": "https://x.com/ClaudeDevs/status/2105721439206994232",
+      "post_date": "2026-10-01",
+      "attribution": "official-publisher-demo",
+      "repository": "anthropics/claude-code-playground",
+      "repo_url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater",
+      "readme_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/README.md",
+      "mod_entry_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/hooks/hooks.json",
+      "mod_modules": [
+        "./replay-theater.mjs"
+      ],
+      "module_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/replay-theater/hooks/replay-theater.mjs",
+      "license": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "practical_value": "Step through the last editing turn one attempted Edit or Write at a time. Useful for learning how a change unfolded before checking the final Git diff.",
+      "practical_value_zh": "按顺序回看上一轮的 Edit／Write 修改尝试，先理解修改过程，再核对最终 Git diff。",
+      "caveat": "It can record denied or failed attempts and truncates displayed diffs; it is not proof of final disk contents. Session-local teaching sample, not a supported product.",
+      "caveat_zh": "可能包含被拒绝或失败的修改尝试，差异视图也会截断；不能据此证明文件最终状态。会话内教学示例，不是受支持的产品。",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "evidence_level": "A: original public X post read directly; canonical repository documentation and function-hook entry checked",
+      "verification_method": [
+        "Direct public X page, author, date, post text and linked thread read in cloud browser on 2026-10-02",
+        "Canonical GitHub README and function-hook entry checked via GitHub connector; existing source review reused"
+      ],
+      "repository_attribution": "Anthropic official thread names the sample and links its getting-started guide / Playground repository",
+      "current_runtime_compatibility": "not-tested",
+      "security_audit": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "id": "blast-radius",
+      "name": "Blast Radius",
+      "category": "Command impact preview",
+      "category_zh": "命令影响预览",
+      "author_handle": "@ClaudeDevs",
+      "post_url": "https://x.com/ClaudeDevs/status/2105721437701259338",
+      "post_date": "2026-10-01",
+      "attribution": "official-publisher-demo",
+      "repository": "anthropics/claude-code-playground",
+      "repo_url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/blast-radius",
+      "readme_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/README.md",
+      "mod_entry_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/hooks/hooks.json",
+      "mod_modules": [
+        "./blast-radius.mjs"
+      ],
+      "module_url": "https://github.com/anthropics/claude-code-playground/blob/main/claude-code/mods/blast-radius/hooks/blast-radius.mjs",
+      "license": "Apache-2.0 (repository license)",
+      "license_url": "https://github.com/anthropics/claude-code-playground/blob/main/LICENSE",
+      "practical_value": "Hold selected risky Bash commands and inspect a side-pane impact preview before choosing whether to proceed. An instructive example of a human decision inside a tool-call hook.",
+      "practical_value_zh": "暂停部分高风险 Bash 命令，在侧栏查看影响后决定是否执行，是把人工决策接入工具调用钩子的教学案例。",
+      "caveat": "Heuristic command matching is not a security boundary and misses wrappers or shell constructs. Migration previews may load project code. Test only in a disposable project; upstream notes some later fixes were not re-run live.",
+      "caveat_zh": "启发式命令匹配不是安全边界，会漏掉包装脚本及部分 shell 语法；迁移预览可能加载项目代码。仅在可丢弃项目中评估，上游说明部分后续修复尚未重新实测。",
+      "upstream_version_evidence": "Requires 2.1.287+; upstream reports live testing on 2.1.280 and validation on 2.1.285. Not retested here.",
+      "evidence_level": "A: original public X post read directly; canonical repository documentation and function-hook entry checked",
+      "verification_method": [
+        "Direct public X page, author, date, post text and linked thread read in cloud browser on 2026-10-02",
+        "Canonical GitHub README and function-hook entry checked via GitHub connector; existing source review reused"
+      ],
+      "repository_attribution": "Anthropic official thread names the sample and links its getting-started guide / Playground repository",
+      "current_runtime_compatibility": "not-tested",
+      "security_audit": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "id": "mindful-claude",
+      "name": "Mindful Claude",
+      "category": "Interface and waiting time",
+      "category_zh": "界面与等待体验",
+      "author_handle": "@halluton",
+      "post_url": "https://x.com/halluton/status/2099640486130835845",
+      "post_date": "2026-09-14",
+      "attribution": "author-authored-demo",
+      "repository": "halluton/Mindful-Claude",
+      "repo_url": "https://github.com/halluton/Mindful-Claude",
+      "readme_url": "https://github.com/halluton/Mindful-Claude/blob/main/README.md",
+      "mod_entry_url": "https://github.com/halluton/Mindful-Claude/blob/main/hooks/hooks.json",
+      "mod_modules": [
+        "./register.tsx"
+      ],
+      "module_url": "https://github.com/halluton/Mindful-Claude/blob/main/hooks/register.tsx",
+      "license": "MIT",
+      "license_url": "https://github.com/halluton/Mindful-Claude/blob/main/LICENSE",
+      "practical_value": "A breathing animation appears while Claude is working and disappears when the turn ends. A compact example of turn-aware UI that does not need model-generated content.",
+      "practical_value_zh": "Claude 工作时显示呼吸节奏动画，轮次结束后消失，是无需模型生成内容的轻量、轮次感知界面示例。",
+      "caveat": "Treat it as a UI/focus experiment; no medical benefit is claimed here. Its README retains early-access flag instructions, and current-runtime compatibility was not tested.",
+      "caveat_zh": "仅作为界面和专注体验实验收录，不宣称医疗收益。README 仍保留早期访问开关说明，未在当前版本运行验证。",
+      "upstream_version_evidence": "Upstream requires 2.1.269+ with old flag instructions; current compatibility untested.",
+      "evidence_level": "A: original public X post read directly; canonical repository documentation and function-hook entry checked",
+      "verification_method": [
+        "Direct public X page, author, date, post text and linked thread read in cloud browser on 2026-10-02",
+        "Canonical GitHub README and function-hook entry checked via GitHub connector; existing source review reused"
+      ],
+      "repository_attribution": "Author post directly links halluton/Mindful-Claude",
+      "current_runtime_compatibility": "not-tested",
+      "security_audit": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "id": "terminal-browser",
+      "name": "terminal-browser",
+      "category": "Embedded browser and preview",
+      "category_zh": "内嵌浏览器与预览",
+      "author_handle": "@RobKnight__",
+      "author_name": "Rob Pruzan",
+      "post_url": "https://x.com/RobKnight__/status/2100622380439683541",
+      "post_date": "2026-09-17",
+      "attribution": "author-authored-announcement",
+      "repository": "zenbu-labs/terminal-browser",
+      "repo_url": "https://github.com/zenbu-labs/terminal-browser/tree/main/claude-code-plugin",
+      "readme_url": "https://github.com/zenbu-labs/terminal-browser/blob/main/claude-code-plugin/README.md",
+      "mod_entry_url": "https://github.com/zenbu-labs/terminal-browser/blob/main/claude-code-plugin/hooks/hooks.json",
+      "mod_modules": [
+        "./register.tsx"
+      ],
+      "module_url": "https://github.com/zenbu-labs/terminal-browser/blob/main/claude-code-plugin/hooks/register.tsx",
+      "license": "MIT",
+      "license_url": "https://github.com/zenbu-labs/terminal-browser/blob/main/LICENSE",
+      "practical_value": "Open a real browser inside a Claude Code pane to preview a local website or HTML output beside the conversation. The plugin also exposes a browser API for other mods.",
+      "practical_value_zh": "在 Claude Code 侧栏打开真实浏览器，并排预览本地网站或 HTML 产物；还可通过插件 API 供其他 Mod 使用。",
+      "caveat": "Requires the separate terminal-browser binary and kitty graphics protocol with Unicode placeholders. The author marks it experimental; tmux integration, mouse alignment and layout have documented limits. Installing or browsing may involve local-network permissions and normal website traffic.",
+      "caveat_zh": "依赖单独的 terminal-browser 程序，以及支持 kitty 图形协议和 Unicode 占位符的终端。作者标为实验性，tmux 集成、鼠标位置和布局存在限制；安装与浏览可能涉及本地网络权限及正常网站流量。",
+      "upstream_version_evidence": "Author asks for latest Claude Code but gives no numeric minimum; README still includes early-access flag. Current runtime not tested.",
+      "evidence_level": "A: author announcement plus explicit author-to-repository link; README, hook entry and exported register checked",
+      "verification_method": [
+        "Original announcement read directly in public X cloud-browser page on 2026-10-02",
+        "Author reply independently opened and its direct GitHub plugin link read",
+        "GitHub connector read README, hooks.json, register.tsx and MIT license"
+      ],
+      "repository_attribution": "The author links this exact plugin directory in a follow-on post",
+      "repository_link_post": "https://x.com/RobKnight__/status/2100622964395774443",
+      "current_runtime_compatibility": "not-tested",
+      "security_audit": false,
+      "checked_on": "2026-10-02"
+    }
+  ]
+}
