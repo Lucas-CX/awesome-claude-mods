@@ -1,17 +1,26 @@
 # Awesome Claude Mods
 
-按真实使用场景整理的 Claude Code Mods 指南：保留原作者链接、版本依据、风险提示和可重复的评估方法。
+按你眼前的任务选择 Claude Code Mod：看上下文增长、复盘修改尝试，或在会话旁预览网站。原作者源码、演示原帖、版本依据与使用限制，一处查清。
 
-[English](README.md) · [版本兼容说明](docs/COMPATIBILITY.md) · [评估案例](cases/README.md) · [X 原帖](docs/X_SHOWCASE.md) · [参与贡献](CONTRIBUTING.md)
+[English](README.md) · [浏览案例索引](#案例索引) · [版本兼容说明](docs/COMPATIBILITY.md) · [评估案例](cases/README.md) · [X 原帖](docs/X_SHOWCASE.md) · [参与贡献](CONTRIBUTING.md)
 
-**检查日期：2026-10-02。** 共 19 个案例链接：3 个 Anthropic 示例、9 个社区精选、4 个内置实现参考、3 个许可证待澄清项目。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
+![原创概览：Token Weather 用于上下文可视化，Replay Theater 用于修改审阅，terminal-browser 用于内嵌浏览器预览。这是概念示意图，不是运行截图。](assets/overview.svg)
 
-## 先按需求选择
+**检查日期：2026-10-02。** 共 19 个目录条目：3 个 Anthropic 示例、9 个社区精选、4 个内置实现参考、3 个许可证待澄清项目。X 案例另收录 terminal-browser。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
 
-- 看上下文增长：Token Weather 简单直观；cctop 信息更全面
-- 复盘一轮修改：Replay Theater 看修改尝试的顺序；内置 diff 看最终工作区差异
-- 跟踪 PR 和 CI：cc-pr-tracker
-- 在终端看流程图：claude-mermaid
+## 从这三个场景开始
+
+先选需求，再看原始演示，试用前核对源码和限制。
+
+| 你想做什么 | 先看这个 | 使用前注意 |
+| --- | --- | --- |
+| **一眼看懂上下文增长** | **Token Weather** · anthropics<br>用轻量用量提示与近期轮次小图观察上下文。<br>[原作者源码](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather) · [官方发布者演示](https://x.com/ClaudeDevs/status/2105721436270993609) | 每轮结束后更新；完整窗口用量百分比不等于自动压缩阈值。 |
+| **理解一轮修改是怎么完成的** | **Replay Theater** · anthropics<br>按顺序回看上一轮的修改尝试。<br>[原作者源码](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater) · [官方发布者演示](https://x.com/ClaudeDevs/status/2105721439206994232) | 可能包含被拒绝或失败的尝试，差异展示会截断；还应核对最终 Git diff。 |
+| **在会话旁预览网站** | **terminal-browser** · zenbu-labs / Rob Knight<br>在 Claude Code 侧栏打开真实浏览器。<br>[原作者源码](https://github.com/zenbu-labs/terminal-browser/tree/main/claude-code-plugin) · [作者演示](https://x.com/RobKnight__/status/2100622380439683541) | 实验性项目，依赖独立程序和支持 kitty 图形协议及 Unicode 占位符的终端；多路复用器与布局存在限制。 |
+
+Token Weather 和 Replay Theater 是 Anthropic 发布的教学示例，**不是受支持产品**。terminal-browser 是另一个社区实验项目，详见 [X 案例说明](docs/X_SHOWCASE.md)。
+
+**还有这些需求：**想看更完整的会话面板，可研究 [cctop](https://github.com/tomstagl/cctop/tree/main/plugin)；跟踪 PR 评审和必需检查，可研究 [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker)；在终端看支持的流程图，可研究 [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid)。
 
 先阅读[评估步骤](cases/README.md)，再选一个试用。示例步骤不是已经完成的测试报告。
 

@@ -1,19 +1,28 @@
 # Awesome Claude Mods
 
-Practical Claude Code Mods, organized by the job they help you do, with version evidence, safety caveats, and original-author links.
+Find a Claude Code Mod for the job in front of you: see context growth, review edit attempts, or preview a website beside your conversation. Original sources, author demos, version evidence, and practical caveats in one guide.
 
-[简体中文](README.zh-CN.md) · [Compatibility](docs/COMPATIBILITY.md) · [Evaluation recipes](cases/README.md) · [X demos](docs/X_SHOWCASE.md) · [Contribute](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Browse the catalog](#anthropic-playground-samples) · [Compatibility](docs/COMPATIBILITY.md) · [Evaluation recipes](cases/README.md) · [X demos](docs/X_SHOWCASE.md) · [Contribute](CONTRIBUTING.md)
 
-**Review snapshot: 2026-10-02.** 19 linked examples: 3 Anthropic playground samples, 9 community selections, 4 built-in references, and 3 license-clarification candidates. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
+![Original overview of three Claude Code Mod workflows: Token Weather for context visibility, Replay Theater for edit review, and terminal-browser for an embedded browser. Concept illustration, not a runtime screenshot.](assets/overview.svg)
 
-## Start with a real job
+**Review snapshot: 2026-10-02.** 19 catalog entries: 3 Anthropic playground samples, 9 community selections, 4 built-in references, and 3 license-clarification candidates. The X showcase also includes terminal-browser. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
 
-- **Understand context growth:** start by reading [Token Weather](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather); compare its lightweight display with cctop below
-- **Review a long editing turn:** compare Replay Theater's sequence of attempted edits with the final working-tree view in built-in diff
-- **Stop switching tabs to watch a PR:** evaluate cc-pr-tracker with a low-risk test repository
-- **Make architecture explanations readable:** try the supported diagram types in claude-mermaid
+## Three places to start
 
-The three [evaluation recipes](cases/README.md) turn those ideas into repeatable checks. They are proposed experiments, not published test results.
+Pick a workflow, watch the original demo, then read the source and caveats before trying it.
+
+| Your next job | Start here | What to know first |
+| --- | --- | --- |
+| **See context growth at a glance** | **Token Weather** · anthropics<br>A compact context gauge with recent-turn history.<br>[Original source](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather) · [Publisher demo](https://x.com/ClaudeDevs/status/2105721436270993609) | Updates after turns. Its full-window percentage differs from the auto-compaction threshold. |
+| **Understand how a change unfolded** | **Replay Theater** · anthropics<br>Step through the last editing turn, one attempted edit at a time.<br>[Original source](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater) · [Publisher demo](https://x.com/ClaudeDevs/status/2105721439206994232) | Includes denied or failed attempts; displayed diffs are truncated. Check the final Git diff too. |
+| **Preview a website beside the conversation** | **terminal-browser** · zenbu-labs / Rob Knight<br>Open a real browser inside a Claude Code pane.<br>[Original source](https://github.com/zenbu-labs/terminal-browser/tree/main/claude-code-plugin) · [Author demo](https://x.com/RobKnight__/status/2100622380439683541) | Experimental. Requires a separate binary and kitty graphics support with Unicode placeholders; multiplexer and layout limits apply. |
+
+Token Weather and Replay Theater are Anthropic-published teaching samples, **not supported products**. terminal-browser is a separate community experiment featured in the [X showcase](docs/X_SHOWCASE.md).
+
+**Other jobs:** use [cctop](https://github.com/tomstagl/cctop/tree/main/plugin) for a fuller session dashboard, [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker) for PR reviews and required checks, or [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid) for supported diagrams in terminal text.
+
+The three [evaluation recipes](cases/README.md) turn workflow ideas into repeatable checks. They are proposed experiments, not published test results.
 
 ## Watch the original X demos
 

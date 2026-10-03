@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
+  <title id="title">Awesome Claude Mods: three workflows to explore</title>
+  <desc id="desc">An original concept illustration showing context visibility with Token Weather, edit review with Replay Theater, and browser previews with terminal-browser. This is not a runtime screenshot.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ded9ce"/></pattern>
+  </defs>
+  <rect width="1280" height="600" rx="20" fill="#f6f3ec"/>
+  <rect x="880" y="0" width="400" height="600" fill="url(#dots)" opacity=".55"/>
+  <rect x="48" y="42" width="36" height="4" rx="2" fill="#bb593d"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="100" y="49" font-size="15" font-weight="700" letter-spacing="2.6" fill="#696659">AWESOME CLAUDE MODS</text>
+    <text x="48" y="116" font-size="46" font-weight="700" letter-spacing="-1.5" fill="#262c28">Useful mods. Clear starting points.</text>
+    <text x="48" y="154" font-size="21" fill="#666b62">Choose a workflow. Explore the source. Know the caveats.</text>
+
+    <g transform="translate(48 197)">
+      <rect width="378" height="297" rx="16" fill="#fffdf8" stroke="#d8d4c9"/>
+      <text x="24" y="34" font-size="13" font-weight="700" letter-spacing="1.6" fill="#72756b">01 / CONTEXT VISIBILITY</text>
+      <g transform="translate(26 63)" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 93 A77 77 0 0 1 168 93" fill="none" stroke="#e7e8de" stroke-width="16"/>
+        <path d="M14 93 A77 77 0 0 1 125 24" fill="none" stroke="#798f6c" stroke-width="16"/>
+        <path d="M91 93 L129 50" stroke="#3e5944" stroke-width="5"/>
+        <circle cx="91" cy="93" r="8" fill="#3e5944"/>
+        <path d="M206 105 L206 90 M226 105 L226 82 M246 105 L246 60 M266 105 L266 70 M286 105 L286 43 M306 105 L306 29" stroke="#798f6c" stroke-width="10"/>
+        <path d="M197 121 H317" stroke="#d8d4c9" stroke-width="2"/>
+      </g>
+      <text x="24" y="226" font-size="28" font-weight="700" letter-spacing="-.7" fill="#262c28">Token Weather</text>
+      <text x="24" y="255" font-size="19" fill="#646b5e">See context grow, turn by turn</text>
+      <text x="24" y="279" font-size="14" fill="#797c71">anthropics · playground sample</text>
+    </g>
+
+    <g transform="translate(451 197)">
+      <rect width="378" height="297" rx="16" fill="#fffdf8" stroke="#d8d4c9"/>
+      <text x="24" y="34" font-size="13" font-weight="700" letter-spacing="1.6" fill="#72756b">02 / EDIT REVIEW</text>
+      <g transform="translate(25 70)" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M51 47 H280" stroke="#dfd5cb" stroke-width="3" stroke-dasharray="5 8"/>
+        <rect x="0" y="15" width="87" height="99" rx="10" fill="#f1e9e0" stroke="#d9c9b7"/>
+        <rect x="117" y="0" width="94" height="129" rx="10" fill="#fff9f1" stroke="#bb593d" stroke-width="2"/>
+        <rect x="241" y="15" width="87" height="99" rx="10" fill="#f1e9e0" stroke="#d9c9b7"/>
+        <path d="M19 43 H63 M19 62 H55 M19 81 H65" stroke="#bfad97" stroke-width="6"/>
+        <path d="M135 31 H191 M135 51 H184" stroke="#bfad97" stroke-width="6"/>
+        <path d="M135 77 H169 M135 96 H191" stroke="#bb593d" stroke-width="6"/>
+        <path d="M260 43 H308 M260 62 H300 M260 81 H305" stroke="#bfad97" stroke-width="6"/>
+      </g>
+      <text x="24" y="226" font-size="28" font-weight="700" letter-spacing="-.7" fill="#262c28">Replay Theater</text>
+      <text x="24" y="255" font-size="19" fill="#646b5e">Retrace the attempted edits</text>
+      <text x="24" y="279" font-size="14" fill="#797c71">anthropics · playground sample</text>
+    </g>
+
+    <g transform="translate(854 197)">
+      <rect width="378" height="297" rx="16" fill="#fffdf8" stroke="#d8d4c9"/>
+      <text x="24" y="34" font-size="13" font-weight="700" letter-spacing="1.6" fill="#72756b">03 / BROWSER PREVIEW</text>
+      <g transform="translate(45 63) scale(.9)" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="0" y="18" width="139" height="112" rx="10" fill="#e9eeeb" stroke="#c4d1cc"/>
+        <path d="M19 42 L29 51 L19 60 M43 60 H68 M19 81 H102 M19 99 H86" fill="none" stroke="#7c9189" stroke-width="4"/>
+        <rect x="151" y="0" width="169" height="148" rx="10" fill="#f5f8f5" stroke="#7c9189" stroke-width="2"/>
+        <path d="M152 31 H319" stroke="#c4d1cc" stroke-width="2"/>
+        <circle cx="169" cy="16" r="3" fill="#7c9189"/><circle cx="181" cy="16" r="3" fill="#7c9189"/><circle cx="193" cy="16" r="3" fill="#7c9189"/>
+        <rect x="168" y="48" width="135" height="47" rx="5" fill="#d6e1d9"/>
+        <path d="M171 111 H238 M171 125 H286" stroke="#a3b5ab" stroke-width="5"/>
+      </g>
+      <text x="24" y="226" font-size="28" font-weight="700" letter-spacing="-.7" fill="#262c28">terminal-browser</text>
+      <text x="24" y="255" font-size="19" fill="#646b5e">Preview beside the conversation</text>
+      <text x="24" y="279" font-size="14" fill="#797c71">zenbu-labs · experimental plugin</text>
+    </g>
+
+    <path d="M48 525 H1232" stroke="#d8d4c9"/>
+    <text x="48" y="556" font-size="16" font-weight="700" fill="#62695d">Original sources · Author demos · Practical caveats</text>
+    <text x="1232" y="556" text-anchor="end" font-size="14" fill="#7b7d72">Concept illustration, not a runtime screenshot</text>
+  </g>
+</svg>
