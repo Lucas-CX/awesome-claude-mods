@@ -2,9 +2,9 @@
 
 Publication checklist for the owner. A checklist item is not evidence that an action has been completed.
 
-## Before the first push
+## Before publishing an update
 
-- Approved target: `Lucas-CX/awesome-claude-mods`, public. Verify creation and the pushed commit before announcing a live repository
+- Target: `Lucas-CX/awesome-claude-mods`, public. Verify the pushed commit and rendered README before announcing an update
 - No collection-wide license is granted without the owner choosing one. Upstream code/media keep their own terms
 - Check that no draft-only claims or unverified live URLs remain
 - Keep the three unresolved-license candidates in the watchlist, or omit them from the first public release
@@ -27,6 +27,14 @@ Keep the main README in English and the Chinese version one click away. Put a cl
 2. Capture your own short GIF or screenshots from a synthetic project, label the version, and show one limitation as well as the success
 3. Publish a concise comparison with a takeaway a reader can use immediately
 4. Share it once in an appropriate community where self-promotion is allowed, identifying your involvement and crediting the original authors
+
+## What we adapted from established resource lists
+
+Reviewed on 2026-10-03. These are observable publishing patterns, not proof that a layout or post caused star growth.
+
+- **Task-first navigation:** [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) offers a starting path and task categories; [awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods) groups mods by the job they do. Our bilingual task chooser now links directly to existing entries while keeping samples, community projects, references, and the watchlist distinct.
+- **A short path to useful evidence:** [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) puts runnable examples and categories up front; [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills/blob/main/CONTRIBUTING.md) asks for concise, categorized contributions. Our first-use steps and separate suggestion/correction forms reduce navigation and submission friction without claiming that our listed mods were tested.
+- **Teach one useful thing, then link the resource:** the closest catalog's author publishes a [Mods analysis](https://karanbansal.in/blog/claude-mods-scoreboard/) and a [mechanism tutorial](https://karanbansal.in/blog/claude-mods/). For a future announcement, use one concrete task, an attributed demo, one important limit, and a direct section link. Keep credit with the original author; never turn a demo into a claim of independent runtime verification.
 
 ## Site cross-link, after a site exists
 

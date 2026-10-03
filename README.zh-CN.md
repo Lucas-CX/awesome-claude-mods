@@ -2,11 +2,24 @@
 
 按你眼前的任务选择 Claude Code Mod：看上下文增长、复盘修改尝试，或在会话旁预览网站。原作者源码、演示原帖、版本依据与使用限制，一处查清。
 
-[English](README.md) · [直接看演示](#直接看两个演示) · [浏览案例索引](#案例索引) · [版本兼容说明](docs/COMPATIBILITY.md) · [评估案例](cases/README.md) · [X 原帖](docs/X_SHOWCASE.md) · [参与贡献](CONTRIBUTING.md)
+[English](README.md) · [按任务选择](#按任务选择) · [直接看演示](#直接看两个演示) · [首次使用](#安装前必读) · [证据](docs/EVIDENCE.md) · [参与贡献](#贡献建议或纠错)
 
 ![Awesome Claude Mods 社区案例指南：上下文监控、修改回放和浏览器预览。原创概念示意，不是实测运行截图。](assets/cover.jpg)
 
-**检查日期：2026-10-02。** 共 19 个目录条目：3 个 Anthropic 示例、9 个社区精选、4 个内置实现参考、3 个许可证待澄清项目。X 案例另收录 terminal-browser，共涉及 20 个不同 Mod。只有下方注明的 5 个项目核验了演示／发布原帖；19 个目录条目不等于 19 个可直接安装的推荐。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
+**检查日期：2026-10-02。** 共 19 个目录条目：3 个 [Anthropic 示例](#anthropic-发布的实验示例)、9 个[社区精选](#社区精选)、4 个[内置实现参考](#内置实现参考)、3 个[许可证待澄清项目](#观察名单许可证待澄清)。X 案例另收录 terminal-browser，共涉及 20 个不同 Mod。只有下方注明的 5 个项目核验了演示／发布原帖；19 个目录条目不等于 19 个可直接安装的推荐。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
+
+## 按任务选择
+
+| 我想…… | 从这里看 |
+| --- | --- |
+| 看上下文增长或会话用量 | [Token Weather](#token-weather--anthropics)（示例）· [cctop](#cctop--tomstagl)（社区） |
+| 复盘修改或跟踪 PR 检查 | [Replay Theater](#replay-theater--anthropics)（示例）· [cc-pr-tracker](#cc-pr-tracker--sezaakgun)（社区） |
+| 预览网站或阅读图表 | [terminal-browser](#terminal-browser--在-claude-code-里打开浏览器)（展示案例）· [claude-mermaid](#claude-mermaid--galelmalah)（社区） |
+| 改变等待体验 | [Mindful Claude](#mindful-claude--halluton) · [cc-arcade](#cc-arcade--sezaakgun)（社区） |
+| 研究模型、缓存或隐私行为 | [工作流、成本与隐私](#工作流成本与隐私)（进阶实验） |
+| 编写自己的 Mod | [官方编写与测试文档](#编写自己的-mod) · [内置实现参考](#内置实现参考) |
+
+第一次接触 Mods？按[首次使用三步](#安装前必读)走。上面链接会先带你看条件与限制，不是一键安装清单。
 
 ## 直接看两个演示
 
@@ -64,8 +77,6 @@ https://github.com/user-attachments/assets/44601a4e-a4b4-4e0b-b1d2-4621293b8150
 
 Token Weather 和 Replay Theater 是 Anthropic 发布的教学示例，**不是受支持产品**。terminal-browser 是另一个社区实验项目，详见 [X 案例说明](docs/X_SHOWCASE.md)。
 
-**还有这些需求：** 想看更完整的会话面板，可研究 [cctop](https://github.com/tomstagl/cctop/tree/main/plugin)；跟踪 PR 评审和必需检查，可研究 [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker)；在终端看支持的流程图，可研究 [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid)。
-
 先阅读[评估步骤](cases/README.md)，再选一个试用。示例步骤不是已经完成的测试报告。
 
 ## X 原帖精选
@@ -84,7 +95,9 @@ Token Weather 和 Replay Theater 是 Anthropic 发布的教学示例，**不是�
 
 截至检查日，[官方说明](https://code.claude.com/docs/en/plugins/mods/overview)要求 Claude Code **2.1.287+**，默认启用 Mods。早期的 CLAUDE_CODE_ENABLE_FUNCTION_HOOKS 在该版本范围被忽略，设为 0 也不能关闭 Mods。很多社区 README 尚未更新，不能直接照搬旧步骤。
 
-Mods 可使用当前账户权限，也可能消耗模型用量。先在临时项目里检查权限范围，一次只评估一个。详见[兼容性和检查清单](docs/COMPATIBILITY.md)。
+1. **先选一个任务。** 从[任务索引](#按任务选择)进入，读条目的限制，有原始演示就先看演示。
+2. **安装前核对条件。** 对照[兼容性检查清单](docs/COMPATIBILITY.md)和上游安装说明，确认自己的 Claude Code 版本、终端、依赖、权限和许可证。Mods 可使用当前账户权限，也可能消耗模型用量。
+3. **在临时项目里一次评估一个。** 参考[评估步骤](cases/README.md)，亲自检查结果，并提前找到上游停用／卸载方法。用[记录模板](docs/REVIEW_TEMPLATE.md)留下版本与结果；这里的步骤不是已完成的测试报告。
 
 ## 案例索引
 
@@ -258,10 +271,27 @@ Mods 可使用当前账户权限，也可能消耗模型用量。先在临时项
 
 逐项版本声明、许可证依据和检查范围见[证据矩阵](docs/EVIDENCE.md)及 [data/mods.json](data/mods.json)。上游说“已测试”与本指南亲自实测是两回事。
 
+## 编写自己的 Mod
+
+- [官方概览](https://code.claude.com/docs/en/plugins/mods/overview)：能力与信任边界
+- [编写 Mod](https://code.claude.com/docs/en/plugins/mods/create)：开发流程
+- [测试 Mod](https://code.claude.com/docs/en/plugins/mods/test)：官方测试工具
+- [排查问题](https://code.claude.com/docs/en/plugins/mods/troubleshoot)：加载与故障诊断
+
+Mod 是包含可执行函数钩子的插件；skill 是指令文件，设置型 hook 是配置的生命周期操作，MCP server 提供外部工具。一个插件可以同时包含多种能力；本指南收录的是实际 Mod 入口。
+
 ## 为什么再做一个指南
 
 [awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)擅长广泛发现和能力扫描。本指南侧重“解决什么问题、适合谁、哪些版本信息已过时、怎样验证效果”。不按星数堆链接，不把别人的扫描结果当成自己的测试，也不把普通 skills、MCP 或设置型 hooks 混充 Mods。
 
 [karanb192/claude-code-mods](https://github.com/karanb192/claude-code-mods)是相关市场和工具集，其中 mod-builder 是辅助编写 Mod 的 skill。感谢这些项目帮助发现候选案例。
 
-欢迎按[贡献指南](CONTRIBUTING.md)提交有版本、日志和复现步骤的真实结果。本合集未另行授予统一许可证，链接收录不会改变上游权利；参见[发布清单](docs/PUBLISHING.md)。
+## 贡献建议或纠错
+
+- [推荐一个 Mod](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=suggest-mod.yml)：先给原作者链接和具体用途，不确定的信息可以标明未知
+- [报告失效链接、过时说明或兼容性结果](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=report-correction.yml)：指出受影响条目，并附上纠正依据
+- 想直接修改？按[贡献指南](CONTRIBUTING.md)提交聚焦的 PR
+
+提 issue 不要求先安装 Mod，也不要求同时翻译两份 README。请区分上游声明和自己实际做过的检查，只使用脱敏或模拟示例。
+
+本合集未另行授予统一许可证，链接收录不会改变上游权利；参见[发布清单](docs/PUBLISHING.md)。

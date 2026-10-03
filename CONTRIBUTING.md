@@ -13,7 +13,14 @@ Help readers choose and verify a useful mod. A short, evidenced entry is better 
 
 Standalone skills, MCP servers, terminal themes, settings hooks, forks that only repackage somebody else's work, and general catalogs do not become mod entries. Relevant authoring tools may be linked separately.
 
-## Submit
+## Suggest or correct without a pull request
+
+- [Suggest a mod](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=suggest-mod.yml): give its original source, one concrete use case, and whatever evidence you already have. Unknown version or license details are welcome when clearly marked; a suggestion still needs review before inclusion.
+- [Report a correction or compatibility result](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=report-correction.yml): identify the affected entry, what changed, and a dated source or reproducible result.
+
+English and Chinese submissions are both welcome. You do not need to install a mod or translate both READMEs to open an issue. A documentation check is useful; label it honestly.
+
+## Submit a pull request
 
 1. Add a concise entry to `data/mods.json` and both READMEs. Use the existing fields; preserve original attribution.
 2. Update `docs/EVIDENCE.md` with a dated primary-source link and upstream version claim. Do not silently convert an old tested version into a current minimum.

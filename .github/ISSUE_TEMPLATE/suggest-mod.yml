@@ -1,27 +1,49 @@
-name: Suggest a mod or report a compatibility change
-description: Bring a useful case, original source, and honest evidence
+name: Suggest a mod / 推荐 Mod
+description: Share an original source and a concrete use case; running the mod is not required
 title: "[Mod] "
 body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome. Unknown details are okay; say what you have not checked. Do not install a mod just to submit it, or include secrets/private transcripts.
+        欢迎中文或英文；未知信息可以说明，不必为了投稿先安装，也不要上传秘密或私人会话。
   - type: input
     id: source
     attributes:
-      label: Canonical repository and specific mod directory
+      label: Original repository and specific mod directory / 原作者仓库与 Mod 子目录
+      description: Link the actual mod, not a general catalog or a repackaged fork.
     validations:
       required: true
   - type: textarea
     id: use-case
     attributes:
-      label: What real problem does it solve?
+      label: What real problem does it solve? / 解决什么具体问题？
+      description: One concrete task and why this mod helps; a short answer is enough.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Version, license, dependencies, and checks actually run
-      description: Say not tested where applicable. Include dates and source links; no secrets or private transcripts.
+      label: Known version, license, and dependency evidence / 已知版本、许可证与依赖依据
+      description: Add dated upstream links if available. Mark unknown details; separate upstream claims from your own checks.
+  - type: dropdown
+    id: checks
+    attributes:
+      label: What have you personally checked? / 你实际检查过什么？
+      options:
+        - "Not checked / 尚未检查"
+        - "Documentation or source only; not run / 仅文档或源码，未运行"
+        - "Static validation only; include version and log below / 仅静态校验，请补版本与日志"
+        - "A runtime workflow; include environment and result below / 运行过具体流程，请补环境与结果"
     validations:
       required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Check details, if any / 检查详情（如有）
+      description: For validation or runtime checks, include mod commit/release, Claude Code version, OS/terminal, steps, result, failures, and sanitized evidence.
   - type: input
     id: relationship
     attributes:
-      label: Your relationship to the project
+      label: Your relationship to the project / 你与项目的关系
+      description: Say if you are the author, maintainer, sponsor, or receive payment.

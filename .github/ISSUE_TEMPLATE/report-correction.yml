@@ -1,0 +1,39 @@
+name: Report a correction or result / 纠错或反馈结果
+description: Report a broken link, outdated claim, license change, or compatibility result
+title: "[Correction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome. Report only what you observed; a failed test is useful too. Use synthetic examples and remove private data.
+        欢迎中文或英文；只陈述实际观察到的情况，失败结果同样有用。请使用模拟示例并去掉私人数据。
+  - type: input
+    id: entry
+    attributes:
+      label: Affected mod or guide section / 受影响的 Mod 或指南章节
+      description: Paste the entry, upstream repository, or section link.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What changed? / 哪类变化？
+      options:
+        - "Broken or moved link / 链接失效或迁移"
+        - "Outdated or inaccurate description / 说明过时或不准确"
+        - "Version or runtime compatibility / 版本或运行兼容性"
+        - "License, permissions, or cost caveat / 许可证、权限或费用限制"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observation and evidence / 观察结果与依据
+      description: Explain the current claim and proposed correction. Include a dated primary-source link or sanitized result; distinguish documentation from your own test.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and reproduction, if you ran it / 如有运行，请填写环境与复现步骤
+      description: Include mod commit/release, Claude Code version, OS/terminal, steps, expected/actual result, and known failures. Leave blank for a documentation-only correction.

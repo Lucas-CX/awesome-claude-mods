@@ -2,11 +2,24 @@
 
 Find a Claude Code Mod for the job in front of you: see context growth, review edit attempts, or preview a website beside your conversation. Original sources, author demos, version evidence, and practical caveats in one guide.
 
-[简体中文](README.zh-CN.md) · [Watch demos](#watch-two-demos-here) · [Browse the catalog](#anthropic-playground-samples) · [Compatibility](docs/COMPATIBILITY.md) · [Evaluation recipes](cases/README.md) · [X demos](docs/X_SHOWCASE.md) · [Contribute](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Choose by task](#choose-by-task) · [Watch demos](#watch-two-demos-here) · [First steps](#before-installing) · [Evidence](docs/EVIDENCE.md) · [Contribute](#contribute-a-useful-result)
 
 ![Awesome Claude Mods: a community guide to context monitoring, edit replay, and browser preview. Original concept previews, not runtime screenshots.](assets/cover.jpg)
 
-**Review snapshot: 2026-10-02.** 19 catalog entries: 3 Anthropic playground samples, 9 community selections, 4 built-in references, and 3 license-clarification candidates. The X showcase adds terminal-browser, for 20 distinct mods overall. Only 5 have verified demo / announcement posts; the 19 catalog entries are not 19 installation recommendations. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
+**Review snapshot: 2026-10-02.** 19 catalog entries: 3 [Anthropic playground samples](#anthropic-playground-samples), 9 [community selections](#community-selections), 4 [built-in references](#built-in-implementation-references), and 3 [license-clarification candidates](#watchlist-license-clarification-needed). The X showcase adds terminal-browser, for 20 distinct mods overall. Only 5 have verified demo / announcement posts; the 19 catalog entries are not 19 installation recommendations. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
+
+## Choose by task
+
+| I want to… | Start here |
+| --- | --- |
+| See context growth or session usage | [Token Weather](#token-weather--anthropics) (sample) · [cctop](#cctop--tomstagl) (community) |
+| Review edits or follow PR checks | [Replay Theater](#replay-theater--anthropics) (sample) · [cc-pr-tracker](#cc-pr-tracker--sezaakgun) (community) |
+| Preview a website or read diagrams | [terminal-browser](#terminal-browser--a-browser-inside-claude-code) (showcase) · [claude-mermaid](#claude-mermaid--galelmalah) (community) |
+| Change the waiting experience | [Mindful Claude](#mindful-claude--halluton) · [cc-arcade](#cc-arcade--sezaakgun) (community) |
+| Explore model, cache, or privacy behavior | [Workflow, cost and privacy](#workflow-cost-and-privacy) (advanced experiments) |
+| Build my own mod | [Official authoring and test docs](#build-your-own) · [Built-in implementation references](#built-in-implementation-references) |
+
+New to Mods? Follow the [three first-use steps](#before-installing). The links above lead to requirements and caveats, not a one-click install list.
 
 ## Watch two demos here
 
@@ -64,8 +77,6 @@ Open a real browser inside a Claude Code pane.
 
 Token Weather and Replay Theater are Anthropic-published teaching samples, **not supported products**. terminal-browser is a separate community experiment featured in the [X showcase](docs/X_SHOWCASE.md).
 
-**Other jobs:** use [cctop](https://github.com/tomstagl/cctop/tree/main/plugin) for a fuller session dashboard, [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker) for PR reviews and required checks, or [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid) for supported diagrams in terminal text.
-
 The three [evaluation recipes](cases/README.md) turn workflow ideas into repeatable checks. They are proposed experiments, not published test results.
 
 ## Watch the original X demos
@@ -82,9 +93,11 @@ The showcase adds terminal-browser as an experimental browser-in-a-pane example.
 
 ## Before installing
 
-Current official docs set the baseline at **Claude Code 2.1.287+**, with mods enabled by default. `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS` is ignored on that baseline, including when set to `0`. Older community READMEs still contain early-access instructions. Follow [current official guidance](https://code.claude.com/docs/en/plugins/mods/overview) and the project's release notes, then verify your exact version.
+As of the review snapshot, official docs set the baseline at **Claude Code 2.1.287+**, with mods enabled by default. `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS` is ignored on that baseline, including when set to `0`. Older community READMEs still contain early-access instructions. Follow [current official guidance](https://code.claude.com/docs/en/plugins/mods/overview) and the project's release notes, then verify your exact version.
 
-A mod can act with your account's permissions and consume model usage. Start in a disposable project, review capabilities, and add one mod at a time. See the [review and installation checklist](docs/COMPATIBILITY.md).
+1. **Choose one workflow.** Use the [task chooser](#choose-by-task), inspect the entry's caveats, and watch an original demo if available.
+2. **Check before installing.** Compare your exact Claude Code version, terminal, dependencies, permissions, and license with the [compatibility checklist](docs/COMPATIBILITY.md) and upstream setup instructions. A mod can act with your account's permissions and consume model usage.
+3. **Evaluate one mod in a disposable project.** Use an [evaluation recipe](cases/README.md), check the result yourself, and keep upstream disable/uninstall instructions handy. Record your version and outcome with the [review template](docs/REVIEW_TEMPLATE.md); these recipes are not completed test reports.
 
 ## Anthropic playground samples
 
@@ -267,7 +280,11 @@ These helped discovery. This guide independently checks selected upstream links 
 
 ## Contribute a useful result
 
-A reproducible example beats another promotional link. Send the original repository, the specific mod directory, the problem it solves, version evidence, license, and an honest test status. See [CONTRIBUTING.md](CONTRIBUTING.md).
+- [Suggest a mod](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=suggest-mod.yml): a source link and a concrete use case are enough to start; say what is still unknown.
+- [Report a broken link, outdated claim, or compatibility result](https://github.com/Lucas-CX/awesome-claude-mods/issues/new?template=report-correction.yml): include the affected entry and evidence for the correction.
+- Ready to edit? Follow [CONTRIBUTING.md](CONTRIBUTING.md) for a focused pull request.
+
+You do not need to install a mod or translate both READMEs to open an issue. Distinguish upstream claims from checks you actually ran, and use only sanitized or synthetic examples.
 
 ## Attribution and licensing
 
