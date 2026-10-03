@@ -2,11 +2,31 @@
 
 按你眼前的任务选择 Claude Code Mod：看上下文增长、复盘修改尝试，或在会话旁预览网站。原作者源码、演示原帖、版本依据与使用限制，一处查清。
 
-[English](README.md) · [浏览案例索引](#案例索引) · [版本兼容说明](docs/COMPATIBILITY.md) · [评估案例](cases/README.md) · [X 原帖](docs/X_SHOWCASE.md) · [参与贡献](CONTRIBUTING.md)
+[English](README.md) · [直接看演示](#直接看两个演示) · [浏览案例索引](#案例索引) · [版本兼容说明](docs/COMPATIBILITY.md) · [评估案例](cases/README.md) · [X 原帖](docs/X_SHOWCASE.md) · [参与贡献](CONTRIBUTING.md)
 
 ![Awesome Claude Mods 社区案例指南：上下文监控、修改回放和浏览器预览。原创概念示意，不是实测运行截图。](assets/cover.jpg)
 
 **检查日期：2026-10-02。** 共 19 个目录条目：3 个 Anthropic 示例、9 个社区精选、4 个内置实现参考、3 个许可证待澄清项目。X 案例另收录 terminal-browser，共涉及 20 个不同 Mod。只有下方注明的 5 个项目核验了演示／发布原帖；19 个目录条目不等于 19 个可直接安装的推荐。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
+
+## 直接看两个演示
+
+点击播放即可在 README 内观看。播放器引用作者原先上传到 GitHub 的视频；GitHub 可能默认静音。
+
+### terminal-browser · 在 Claude Code 里打开浏览器
+
+在 Claude Code 侧栏打开真实浏览器。**作者：** zenbu-labs / @RobKnight__。[上游演示与安装说明](https://github.com/zenbu-labs/terminal-browser/blob/main/claude-code-plugin/README.md) · [单独打开原视频](https://github.com/user-attachments/assets/a79e7667-6fcb-49a4-9967-44d0f942102c)。
+
+https://github.com/user-attachments/assets/a79e7667-6fcb-49a4-9967-44d0f942102c
+
+**使用前注意：** 实验性项目，依赖独立程序和支持相应 kitty 图形能力的终端；具体限制见上游说明。
+
+### One sentence. One plugin. · 现场构建脱敏钩子
+
+来自最初 Mods 提案的短案例：Claude 编写、校验并加载一个钩子，在模型读取工具输出前遮蔽其中的秘密值。**作者：** [@poteat](https://github.com/poteat)。[原始提案与演示](https://github.com/anthropics/claude-code/issues/91870) · [单独打开原视频](https://github.com/user-attachments/assets/44601a4e-a4b4-4e0b-b1d2-4621293b8150)。
+
+https://github.com/user-attachments/assets/44601a4e-a4b4-4e0b-b1d2-4621293b8150
+
+**演示背景：** 为 2026 年 9 月 3 日提案录制的早期原型，用于说明机制，不是当前版本安装教程，也不构成完整的隐私保护保证。
 
 ## 从这三个场景开始
 

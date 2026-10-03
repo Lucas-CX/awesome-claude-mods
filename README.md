@@ -2,11 +2,31 @@
 
 Find a Claude Code Mod for the job in front of you: see context growth, review edit attempts, or preview a website beside your conversation. Original sources, author demos, version evidence, and practical caveats in one guide.
 
-[简体中文](README.zh-CN.md) · [Browse the catalog](#anthropic-playground-samples) · [Compatibility](docs/COMPATIBILITY.md) · [Evaluation recipes](cases/README.md) · [X demos](docs/X_SHOWCASE.md) · [Contribute](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Watch demos](#watch-two-demos-here) · [Browse the catalog](#anthropic-playground-samples) · [Compatibility](docs/COMPATIBILITY.md) · [Evaluation recipes](cases/README.md) · [X demos](docs/X_SHOWCASE.md) · [Contribute](CONTRIBUTING.md)
 
 ![Awesome Claude Mods: a community guide to context monitoring, edit replay, and browser preview. Original concept previews, not runtime screenshots.](assets/cover.jpg)
 
 **Review snapshot: 2026-10-02.** 19 catalog entries: 3 Anthropic playground samples, 9 community selections, 4 built-in references, and 3 license-clarification candidates. The X showcase adds terminal-browser, for 20 distinct mods overall. Only 5 have verified demo / announcement posts; the 19 catalog entries are not 19 installation recommendations. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
+
+## Watch two demos here
+
+Press play without leaving this README. These players use the authors' original GitHub-hosted uploads; GitHub may start them muted.
+
+### terminal-browser · a browser inside Claude Code
+
+Open a real browser in a Claude Code pane. **Author:** zenbu-labs / @RobKnight__. [Upstream demo and setup](https://github.com/zenbu-labs/terminal-browser/blob/main/claude-code-plugin/README.md) · [Open original video](https://github.com/user-attachments/assets/a79e7667-6fcb-49a4-9967-44d0f942102c).
+
+https://github.com/user-attachments/assets/a79e7667-6fcb-49a4-9967-44d0f942102c
+
+**Before trying:** Experimental; requires a separate binary and a suitable kitty-graphics terminal. See the upstream limitations.
+
+### One sentence. One plugin. · build a masking hook
+
+A short case study from the original Mods proposal: Claude writes, validates and loads a hook that masks secrets in tool output before the model reads it. **Author:** [@poteat](https://github.com/poteat). [Original proposal and demo](https://github.com/anthropics/claude-code/issues/91870) · [Open original video](https://github.com/user-attachments/assets/44601a4e-a4b4-4e0b-b1d2-4621293b8150).
+
+https://github.com/user-attachments/assets/44601a4e-a4b4-4e0b-b1d2-4621293b8150
+
+**Context:** Recorded for the September 3, 2026 proposal. This early prototype illustrates the mechanism; it is not a current installation guide or a complete privacy guarantee.
 
 ## Three places to start
 
