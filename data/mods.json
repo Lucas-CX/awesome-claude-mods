@@ -187,7 +187,7 @@
       "summary": "A detailed dashboard for context, usage, tool activity, agents, and session state.",
       "summary_zh": "查看上下文、用量、工具和子代理状态的综合面板。",
       "selection_reason": "Version matrix and contract diagnostics make compatibility more visible than a generic badge.",
-      "caveats": "Hybrid mod, skills and optional native companion. Review binary installation separately; some metrics are estimates. Follow root installation docs and plugin compatibility notes.",
+      "caveats": "The basic context/cost/rate-limit pane works without the native companion; the fuller tool, file, agent and Advisor dashboard needs it. Review binary installation separately; some metrics are estimates. Follow root installation docs and plugin compatibility notes.",
       "upstream_version_evidence": "Plugin 0.10.0 documents a 2.1.284 contract; this is upstream evidence, not a current-version guarantee.",
       "license_note": "MIT; brand fonts have separate notices",
       "license_url": "https://github.com/tomstagl/cctop/blob/main/LICENSE",
