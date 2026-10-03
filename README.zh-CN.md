@@ -20,7 +20,7 @@
 
 Token Weather 和 Replay Theater 是 Anthropic 发布的教学示例，**不是受支持产品**。terminal-browser 是另一个社区实验项目，详见 [X 案例说明](docs/X_SHOWCASE.md)。
 
-**还有这些需求：**想看更完整的会话面板，可研究 [cctop](https://github.com/tomstagl/cctop/tree/main/plugin)；跟踪 PR 评审和必需检查，可研究 [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker)；在终端看支持的流程图，可研究 [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid)。
+**还有这些需求：** 想看更完整的会话面板，可研究 [cctop](https://github.com/tomstagl/cctop/tree/main/plugin)；跟踪 PR 评审和必需检查，可研究 [cc-pr-tracker](https://github.com/sezaakgun/cc-pr-tracker)；在终端看支持的流程图，可研究 [claude-mermaid](https://github.com/galElmalah/claude-mods/tree/main/claude-mermaid)。
 
 先阅读[评估步骤](cases/README.md)，再选一个试用。示例步骤不是已经完成的测试报告。
 
