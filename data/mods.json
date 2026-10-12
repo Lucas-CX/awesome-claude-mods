@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "checked_on": "2026-10-02",
-  "scope": "19 individually linked mods: 3 Anthropic samples, 9 community picks, 4 built-in references, 3 license watchlist candidates",
-  "review_notice": "Documentation and module entry existence checked; no mod installed, executed, validated, or runtime-tested by this guide. Not a security audit.",
+  "scope": "20 individually linked mods: 3 Anthropic samples, 10 community picks, 4 built-in references, 3 license watchlist candidates",
+  "review_notice": "Baseline checked_on is 2026-10-02; harness-scope alone was reviewed on 2026-10-12. Use each entry review.checked_on for its actual review date. Documentation and module entry existence checked; no mod installed, executed, validated, or runtime-tested by this guide. Not a security audit.",
   "entries": [
     {
       "id": "token-weather",
@@ -484,6 +484,56 @@
         "module": {
           "url": "https://github.com/sezaakgun/cc-arcade/blob/main/hooks/register.tsx",
           "sha": "71072dcc383e1aea5904d02c7c5aee9e44d3ab13"
+        }
+      }
+    },
+    {
+      "id": "harness-scope",
+      "name": "harness-scope",
+      "author": "shimo4228",
+      "repository": "shimo4228/harness-scope",
+      "path": "plugin",
+      "url": "https://github.com/shimo4228/harness-scope/tree/main/plugin",
+      "kind": "community",
+      "category": "workflow",
+      "summary": "Select shared, named profiles per repository to filter global skills, agents, user instruction files and tools.",
+      "summary_zh": "按仓库选择共享的命名 profile，筛选全局 skills、agents、用户指令文件和工具。",
+      "selection_reason": "Adds reusable allow/deny profiles across repositories; no existing catalog entry covers this configuration-scoping workflow. Keeps project skills, agents and non-user instruction files.",
+      "caveats": "Upstream documents no separate service account or API key; normal Claude Code access/usage still applies. Reads the repo selector, user profiles and session metadata. Not a security boundary: direct SKILL.md reads and later path-scoped instructions remain possible; ToolSearch can rediscover names although matching tool calls are refused. Missing/broken profiles or unknown skill-list formats pass through. Changes need a new conversation or /clear; --plugin-dir needs configDir for user profiles. Upstream reports 1/9 non-loads on Claude 2.1.287 (cause unknown); reported 20/20 loads on 2.1.294 used an older plugin build, not reviewed 0.1.5. No independent mod validation, installation, runtime test or security audit.",
+      "upstream_version_evidence": "Plugin manifest declares 0.1.5 at efae82bc43c273e096130a7e0e549abf7aa1ed1a. README requires Claude Code 2.1.287+ and reports checks on 2.1.287/2.1.294; the 2026-10-08 20/20 load report used plugin 0.1.2, discussed as applicable to 0.1.3. These are author reports, not an independent test of 0.1.5.",
+      "license_note": "MIT declared in plugin manifest; full matching root and plugin LICENSE texts, copyright 2026 Tatsuya Shimomoto.",
+      "license_url": "https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/plugin/LICENSE",
+      "review": {
+        "checked_on": "2026-10-12",
+        "level": "documentation-and-entry-checked",
+        "current_runtime_compatibility": "not-tested",
+        "tests_run": [],
+        "security_audit": false
+      },
+      "evidence": {
+        "repo": "shimo4228/harness-scope",
+        "path": "plugin",
+        "metadata": {
+          "repo": "shimo4228/harness-scope",
+          "url": "https://github.com/shimo4228/harness-scope",
+          "branch": "main",
+          "archived": false,
+          "license": "MIT"
+        },
+        "readme": {
+          "url": "https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/README.md",
+          "sha": "b8f9884c6d9b34bfe356ac7e4b71fbdeddfc4d21"
+        },
+        "entry": {
+          "url": "https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/plugin/hooks/hooks.json",
+          "sha": "21708dd26c882b7923de336b15eae3b7eef14d22",
+          "modules": [
+            "./register.ts"
+          ]
+        },
+        "module": {
+          "url": "https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/plugin/hooks/register.ts",
+          "sha": "279f2a964f32e67ee5122b5ca348665db3505adb"
         }
       }
     },
