@@ -6,7 +6,7 @@
 
 ![Awesome Claude Mods 社区案例指南：上下文监控、修改回放和浏览器预览。原创概念示意，不是实测运行截图。](assets/cover.jpg)
 
-**检查日期：2026-10-02。** 共 19 个目录条目：3 个 [Anthropic 示例](#anthropic-发布的实验示例)、9 个[社区精选](#社区精选)、4 个[内置实现参考](#内置实现参考)、3 个[许可证待澄清项目](#观察名单许可证待澄清)。X 案例另收录 terminal-browser，共涉及 20 个不同 Mod。只有下方注明的 5 个项目核验了演示／发布原帖；19 个目录条目不等于 19 个可直接安装的推荐。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。
+**原有条目检查日期：2026-10-02；harness-scope 单独核查并新增于 2026-10-12。** 共 20 个目录条目：3 个 [Anthropic 示例](#anthropic-发布的实验示例)、10 个[社区精选](#社区精选)、4 个[内置实现参考](#内置实现参考)、3 个[许可证待澄清项目](#观察名单许可证待澄清)。X 案例另收录 terminal-browser，共涉及 21 个不同 Mod。只有下方注明的 5 个项目核验了演示／发布原帖；20 个目录条目不等于 20 个可直接安装的推荐。已核对文档与模块入口，**没有安装、运行或实测这些 Mods**；收录不代表安全审计或兼容性保证。原有条目的检查日期保持不变。
 
 ## 按任务选择
 
@@ -17,6 +17,7 @@
 | 预览网站或阅读图表 | [terminal-browser](#terminal-browser--在-claude-code-里打开浏览器)（展示案例）· [claude-mermaid](#claude-mermaid--galelmalah)（社区） |
 | 改变等待体验 | [Mindful Claude](#mindful-claude--halluton) · [cc-arcade](#cc-arcade--sezaakgun)（社区） |
 | 研究模型、缓存或隐私行为 | [工作流、成本与隐私](#工作流成本与隐私)（进阶实验） |
+| 按仓库减少无关全局能力 | [harness-scope](#harness-scope--shimo4228)（社区） |
 | 编写自己的 Mod | [官方编写与测试文档](#编写自己的-mod) · [内置实现参考](#内置实现参考) |
 
 第一次接触 Mods？按[首次使用三步](#安装前必读)走。上面链接会先带你看条件与限制，不是一键安装清单。
@@ -181,6 +182,15 @@ Token Weather 和 Replay Theater 是 Anthropic 发布的教学示例，**不是�
 - **入口:** [源码](https://github.com/sezaakgun/cc-arcade) · [上游说明／安装](https://github.com/sezaakgun/cc-arcade/blob/main/README.md) · 演示：本指南未核验演示原帖
 
 ### 工作流、成本与隐私
+
+#### harness-scope · shimo4228
+
+- **做什么:** 按仓库选择共享的命名 profile，筛选全局 skills、agents、用户指令文件和工具；保留项目自身 skills、agents 和非用户级指令文件。
+- **适合场景:** 不让庞大的编码配置干扰写作或研究仓库。可复用的允许／拒绝列表覆盖了现有目录未提供的工作流。
+- **安装:** 上游要求 Claude Code **2.1.287+**。执行 `claude plugin install harness-scope --marketplace shimo4228/harness-scope`，在仓库的 `.claude/harness-scope.json` 写入 `{"profile":"writing"}`，然后新建会话或 `/clear`。自定义 profile 放在 `~/.claude/harness-scope/profiles/`；通过 `--plugin-dir` 加载时需设置 `configDir` 才能读取自定义 profile。删除选择文件并 `/clear` 可在该仓库停用。
+- **条件与限制:** 插件 **0.1.5**、MIT。上游说明无需额外账号或 API Key，Claude Code 本身的访问与用量要求仍适用。不是安全隔离机制：仍可直接读取 skill 文件，后续按路径动态附加的指令不受筛选；ToolSearch 可能显示工具名，但匹配的调用会被拒绝。配置损坏或 skill 列表格式无法识别时透传。作者报告 2.1.287 下 9 次中 1 次未加载；2.1.294 下 20/20 的记录使用较早插件版本，并非本次核查的 0.1.5。
+- **审核状态:** **2026-10-12**，提交 `efae82bc43c273e096130a7e0e549abf7aa1ed1a`，`documentation-and-entry-checked`。未独立安装、执行 Claude 校验器、运行测试或安全审计。“不写文件、不联网、不启动进程、不调用模型”来自上游声明，已读钩子与其一致，不能作为独立安全认证。
+- **入口:** [源码](https://github.com/shimo4228/harness-scope/tree/main/plugin) · [固定版本说明／安装](https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/README.md) · [审核证据](cases/harness-scope-2026-10-12.md) · [作者推荐 Issue](https://github.com/Lucas-CX/awesome-claude-mods/issues/2) · 演示：本指南未核验演示原帖
 
 #### fable-pin · karanb192
 

@@ -1,6 +1,6 @@
 # Evidence matrix
 
-Checked on 2026-10-02 through read-only source retrieval. All entries: runtime tests not run by this guide.
+Baseline entries checked on 2026-10-02 through read-only source retrieval. harness-scope alone was separately reviewed on 2026-10-12; earlier review dates and outcomes remain unchanged. All entries: runtime tests not run by this guide.
 
 | Mod | Upstream version evidence | License/provenance |
 | --- | --- | --- |
@@ -15,6 +15,7 @@ Checked on 2026-10-02 through read-only source retrieval. All entries: runtime t
 | [cc-arcade](https://github.com/sezaakgun/cc-arcade) | Upstream requires 2.1.269+ with old flag instructions; its surface claims predate current docs. | [MIT](https://github.com/sezaakgun/cc-arcade/blob/main/LICENSE) |
 | [fable-pin](https://github.com/karanb192/claude-code-mods/tree/main/plugins/fable-pin) | Upstream reports validation on 2.1.272; setup still mentions the obsolete enable flag. | [MIT (repository license)](https://github.com/karanb192/claude-code-mods/blob/main/license) |
 | [cache-tax](https://github.com/karanb192/cache-tax) | Upstream reports validation on 2.1.276; setup still mentions the obsolete enable flag. | MIT (repository metadata) |
+| [harness-scope](https://github.com/shimo4228/harness-scope/tree/main/plugin) | Reviewed **2026-10-12**, plugin **0.1.5**, commit `efae82bc43c273e096130a7e0e549abf7aa1ed1a`. [README](https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/README.md) requires Claude 2.1.287+; author reports checks on 2.1.287/2.1.294. Historical load counts concern earlier builds, not an independent test of 0.1.5. | [MIT plugin license](https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/plugin/LICENSE), matching root license. [Detailed review](../cases/harness-scope-2026-10-12.md); author-submitted [Issue #2](https://github.com/Lucas-CX/awesome-claude-mods/issues/2). |
 | [secret-redactor](https://github.com/ray-amjad/awesome-claude-code-function-hooks/tree/main/plugins/secret-redactor) | No numeric Claude minimum found; README retains old flag-gated setup. | [MIT](https://github.com/ray-amjad/awesome-claude-code-function-hooks/blob/main/LICENSE) |
 | [diff](https://github.com/anthropics/claude-code/tree/main/mods/diff) | Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here. | [Anthropic proprietary terms; public source is not an MIT grant](https://github.com/anthropics/claude-code/blob/main/LICENSE.md) |
 | [agents-md](https://github.com/anthropics/claude-code/tree/main/mods/agents-md) | Built into Claude Code; inspect the copy shipped with your installed release. No current runtime test here. | [Anthropic proprietary terms; public source is not an MIT grant](https://github.com/anthropics/claude-code/blob/main/LICENSE.md) |

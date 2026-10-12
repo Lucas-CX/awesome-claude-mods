@@ -6,7 +6,7 @@ Find a Claude Code Mod for the job in front of you: see context growth, review e
 
 ![Awesome Claude Mods: a community guide to context monitoring, edit replay, and browser preview. Original concept previews, not runtime screenshots.](assets/cover.jpg)
 
-**Review snapshot: 2026-10-02.** 19 catalog entries: 3 [Anthropic playground samples](#anthropic-playground-samples), 9 [community selections](#community-selections), 4 [built-in references](#built-in-implementation-references), and 3 [license-clarification candidates](#watchlist-license-clarification-needed). The X showcase adds terminal-browser, for 20 distinct mods overall. Only 5 have verified demo / announcement posts; the 19 catalog entries are not 19 installation recommendations. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee.
+**Baseline review: 2026-10-02; harness-scope separately reviewed and added on 2026-10-12.** 20 catalog entries: 3 [Anthropic playground samples](#anthropic-playground-samples), 10 [community selections](#community-selections), 4 [built-in references](#built-in-implementation-references), and 3 [license-clarification candidates](#watchlist-license-clarification-needed). The X showcase adds terminal-browser, for 21 distinct mods overall. Only 5 have verified demo / announcement posts; the 20 catalog entries are not 20 installation recommendations. We checked documentation and module entry files. **We have not installed or run these mods.** “Listed” is not a security audit or a compatibility guarantee. Earlier entries retain their original review dates.
 
 ## Choose by task
 
@@ -17,6 +17,7 @@ Find a Claude Code Mod for the job in front of you: see context growth, review e
 | Preview a website or read diagrams | [terminal-browser](#terminal-browser--a-browser-inside-claude-code) (showcase) · [claude-mermaid](#claude-mermaid--galelmalah) (community) |
 | Change the waiting experience | [Mindful Claude](#mindful-claude--halluton) · [cc-arcade](#cc-arcade--sezaakgun) (community) |
 | Explore model, cache, or privacy behavior | [Workflow, cost and privacy](#workflow-cost-and-privacy) (advanced experiments) |
+| Reduce irrelevant global capabilities per repo | [harness-scope](#harness-scope--shimo4228) (community) |
 | Build my own mod | [Official authoring and test docs](#build-your-own) · [Built-in implementation references](#built-in-implementation-references) |
 
 New to Mods? Follow the [three first-use steps](#before-installing). The links above lead to requirements and caveats, not a one-click install list.
@@ -179,6 +180,15 @@ These selections favor a clear workflow and inspectable documentation, not star 
 - **Links:** [Source](https://github.com/sezaakgun/cc-arcade) · [Upstream docs / setup](https://github.com/sezaakgun/cc-arcade/blob/main/README.md) · Demo: No demo post verified by this guide
 
 ### Workflow, cost and privacy
+
+#### harness-scope · shimo4228
+
+- **What it does:** Select shared, named profiles per repo to filter global skills, agents, user instruction files and tools; keeps project skills, agents and non-user instruction files.
+- **Use case:** Keep a large coding setup out of writing or research repos. Reusable allow/deny profiles cover a workflow absent from the existing catalog.
+- **Install:** Upstream requires Claude Code **2.1.287+**. Run `claude plugin install harness-scope --marketplace shimo4228/harness-scope`; put `{"profile":"writing"}` in the repo's `.claude/harness-scope.json`, then start a new conversation or `/clear`. Custom profiles live in `~/.claude/harness-scope/profiles/`; `--plugin-dir` loading needs `configDir` for custom profiles. Delete the selector and `/clear` to disable it in that repo.
+- **Requirements / limits:** Plugin **0.1.5**, MIT. Upstream documents no separate account or API key; normal Claude Code access/usage still applies. Not a security boundary: direct skill-file reads and later path-scoped instructions remain possible; ToolSearch can reveal names although matching calls are refused. Broken profiles or unknown skill-list formats pass through. The author reports 1/9 non-loads on 2.1.287; the 20/20 report on 2.1.294 used an older plugin build, not reviewed 0.1.5.
+- **Review:** `documentation-and-entry-checked` on **2026-10-12**, commit `efae82bc43c273e096130a7e0e549abf7aa1ed1a`. No independent installation, Claude validator, runtime test or security audit. Claims of no writes, network, processes or model calls are upstream claims; the inspected hooks are consistent with them, not an independent safety certification.
+- **Links:** [Source](https://github.com/shimo4228/harness-scope/tree/main/plugin) · [Pinned upstream docs / setup](https://github.com/shimo4228/harness-scope/blob/efae82bc43c273e096130a7e0e549abf7aa1ed1a/README.md) · [Review evidence](cases/harness-scope-2026-10-12.md) · [Author suggestion](https://github.com/Lucas-CX/awesome-claude-mods/issues/2) · Demo: No demo post verified by this guide
 
 #### fable-pin · karanb192
 
